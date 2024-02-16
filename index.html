@@ -4,8 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <h1>Hi</h1>
+    <nav id="desktop-nav">
+      <div class="logo">Jhon Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jhon Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#" onclick="toggleMenu" ()>About</a></li>
+            <li><a href="#" onclick="toggleMenu">Experience</a></li>
+            <li><a href="#" onclick="toggleMenu">Projects</a></li>
+            <li><a href="#" onclick="toggleMenu">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="script.js"></script>
   </body>
 </html>
